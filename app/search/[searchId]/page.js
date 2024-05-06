@@ -1,10 +1,13 @@
 import PageComponent from "@/component/pageComponent";
 
-async function fetchData() {
+export default async function searchId({params}) {
+    let posts = [];
+    const searchTerm = params.searchId;
+
     const API_KEY = process.env.API_KEY;
     const url = 'https://travel-advisor.p.rapidapi.com/locations/search';
     const queryParams = new URLSearchParams({
-        query: 'world',
+        query: searchTerm,
         limit: '30',
         offset: '0',
         units: 'km',
@@ -27,17 +30,7 @@ async function fetchData() {
         if (!res.ok) {
             throw new Error('Failed to fetch data');
         }
-        return res.json();
-    } catch (e) {
-        throw new Error(e.message);
-    }
-}
-
-export default async function Page() {
-    let posts = [];
-
-    try {
-        const response = await fetchData();
+        const response = await res.json();
         const filteredPosts = response.data.filter(post => post.result_type === "things_to_do");
         posts = filteredPosts;
     } catch (error) {
@@ -46,12 +39,11 @@ export default async function Page() {
 
     return (
         <div>
-        <div className='d-flex justify-content-center'>
-          <PageComponent posts={posts}/>
-        </div>
+            <div className='d-flex justify-content-center'>
+                <PageComponent posts={posts}/>
+            </div>
         </div>
     );
 }
-
 
 
