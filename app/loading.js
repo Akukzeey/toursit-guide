@@ -3,7 +3,7 @@ import { RotatingLines} from 'react-loader-spinner';
 
 export default function Loading() {
     return(
-        <div id='loader'>
+        <div id='loader' >
             <RotatingLines
                 strokeColor="grey"
                 strokeWidth="5"
