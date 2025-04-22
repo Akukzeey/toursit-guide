@@ -1,5 +1,4 @@
 'use client'
-import { useState, useEffect } from "react";
 import Loading from "@/app/loading";
 import Post from "@/component/Post";
 

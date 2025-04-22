@@ -2,6 +2,12 @@ import PageComponent from "@/component/pageComponent";
 
 async function fetchData() {
     const API_KEY = process.env.API_KEY;
+
+    if (!API_KEY) {
+        console.warn("API_KEY is not set. Skipping fetch.");
+        return { data: [] };
+    }
+
     const url = 'https://travel-advisor.p.rapidapi.com/locations/search';
     const queryParams = new URLSearchParams({
         query: 'world',
@@ -24,14 +30,14 @@ async function fetchData() {
 
     try {
         const res = await fetch(`${url}?${queryParams}`, options);
-        if (!res.ok) {
-            throw new Error('Failed to fetch data');
-        }
-        return res.json();
+        if (!res.ok) throw new Error(`Fetch error: ${res.status}`);
+        return await res.json();
     } catch (e) {
-        throw new Error(e.message);
+        console.error("Failed to fetch data:", e.message);
+        return { data: [] }; // fallback to empty list
     }
 }
+
 
 export default async function Page() {
     let posts = [];
