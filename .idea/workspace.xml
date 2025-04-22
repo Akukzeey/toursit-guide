@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c4d200e-902d-435b-9ebe-d392de10cb74" name="Changes" comment="Tourist application">
+    <list default="true" id="3c4d200e-902d-435b-9ebe-d392de10cb74" name="Changes" comment="e-next">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/travel.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/app/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/loading.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/loading.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/component/pageComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/pageComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/component/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/component/Post.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,16 @@
       <workItem from="1714782979572" duration="10058000" />
       <workItem from="1714957605416" duration="5280000" />
       <workItem from="1714982854565" duration="6298000" />
-      <workItem from="1715057011852" duration="3010000" />
+      <workItem from="1715057011852" duration="4651000" />
+      <workItem from="1715167550146" duration="1323000" />
+      <workItem from="1715232959550" duration="1947000" />
+      <workItem from="1715337682204" duration="127000" />
+      <workItem from="1715588443958" duration="139000" />
+      <workItem from="1715588779000" duration="455000" />
+      <workItem from="1715671824442" duration="167000" />
+      <workItem from="1716291720044" duration="326000" />
+      <workItem from="1716812335270" duration="121000" />
+      <workItem from="1745299867890" duration="123000" />
     </task>
     <task id="LOCAL-00001" summary="Tourist application">
       <option name="closed" value="true" />
@@ -91,7 +100,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714996209292</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Tourist application">
+      <option name="closed" value="true" />
+      <created>1715156727418</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715156727418</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

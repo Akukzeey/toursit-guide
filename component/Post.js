@@ -23,7 +23,7 @@ function Post({name, address, photo, caption, rating, reviews, latitude, longitu
                 <h5 className="card-title">{name}</h5>
                 <p>{address}</p>
                 <div className="image-container">
-                    <Image src={photo} alt={caption} placeholder="blur" blurDataURL={photo} layout="fill" />
+                    <Image src={photo} alt={caption} placeholder="blur" blurDataURL={photo} fill />
                 </div>
                 <p className="card-text">
                     {caption}
